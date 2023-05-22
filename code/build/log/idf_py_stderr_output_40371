@@ -1,0 +1,73 @@
+In file included from /Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:6:
+/Users/nickhardy/esp/esp-idf/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from /Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:8:
+/Users/nickhardy/esp/esp-idf/components/esp_adc/deprecated/include/esp_adc_cal.h:17:2: warning: #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h" [-Wcpp]
+   17 | #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h"
+      |  ^~~~~~~
+In file included from /Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:25:
+/Users/nickhardy/esp/esp-idf/components/driver/deprecated/driver/periph_ctrl.h:7:2: warning: #warning driver/periph_ctrl.h header is no longer used, and will be removed in future versions. [-Wcpp]
+    7 | #warning driver/periph_ctrl.h header is no longer used, and will be removed in future versions.
+      |  ^~~~~~~
+In file included from /Users/nickhardy/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:42,
+                 from /Users/nickhardy/esp/esp-idf/components/driver/include/driver/uart.h:17,
+                 from /Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:12:
+/Users/nickhardy/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/queue.h:163:58: error: initializer element is not constant
+  163 |     #define xQueueCreate( uxQueueLength, uxItemSize )    xQueueGenericCreate( ( uxQueueLength ), ( uxItemSize ), ( queueQUEUE_TYPE_BASE ) )
+      |                                                          ^~~~~~~~~~~~~~~~~~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:35:25: note: in expansion of macro 'xQueueCreate'
+   35 |   QueueHandle_t queue = xQueueCreate(10, sizeof(example_queue_element_t));
+      |                         ^~~~~~~~~~~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c: In function 'example_timer_on_alarm_cb':
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:40:3: error: parameter 'ele' is initialized
+   40 |   example_queue_element_t ele = {
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:41:22: error: 'edata' undeclared (first use in this function)
+   41 |       .event_count = edata->count_value};
+      |                      ^~~~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:41:22: note: each undeclared identifier is reported only once for each function it appears in
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:37:23: error: old-style parameter declarations in prototyped function definition
+   37 | static bool IRAM_ATTR example_timer_on_alarm_cb(gptimer_handle_t timer, const gptimer_alarm_event_data_t *edata, void *user_data)
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c: In function 'start_timer':
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:391:31: error: 'ele' undeclared (first use in this function)
+  391 |     if (xQueueReceive(queue, &ele, pdMS_TO_TICKS(2000)))
+      |                               ^~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c: In function 'app_main':
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:761:11: warning: unused variable 'final_azimuth_and_altitude' [-Wunused-variable]
+  761 |       int final_azimuth_and_altitude = 1;
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:802:14: warning: unused variable 'voltage' [-Wunused-variable]
+  802 |     uint32_t voltage = esp_adc_cal_raw_to_voltage(adc_reading, adc_chars);
+      |              ^~~~~~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:605:7: warning: unused variable 'previous_voltage' [-Wunused-variable]
+  605 |   int previous_voltage = 0;
+      |       ^~~~~~~~~~~~~~~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:600:7: warning: variable 'current_position_vertical' set but not used [-Wunused-but-set-variable]
+  600 |   int current_position_vertical = 0;
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:598:7: warning: variable 'current_position_horizontal' set but not used [-Wunused-but-set-variable]
+  598 |   int current_position_horizontal = 0;
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:575:7: warning: unused variable 'step_1' [-Wunused-variable]
+  575 |   int step_1 = 2;
+      |       ^~~~~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:573:7: warning: unused variable 'step' [-Wunused-variable]
+  573 |   int step = 2;
+      |       ^~~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:450:27: warning: unused variable 'ele' [-Wunused-variable]
+  450 |   example_queue_element_t ele;
+      |                           ^~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c: In function 'start_timer':
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:406:1: error: control reaches end of non-void function [-Werror=return-type]
+  406 | }
+      | ^
+At top level:
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:409:13: warning: 'test_alpha_display' defined but not used [-Wunused-function]
+  409 | static void test_alpha_display()
+      |             ^~~~~~~~~~~~~~~~~~
+cc1: some warnings being treated as errors
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/solarcode2.c.obj] Error 1
+make[1]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [all] Error 2

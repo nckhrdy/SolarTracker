@@ -1,0 +1,72 @@
+In file included from /Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:6:
+/Users/nickhardy/esp/esp-idf/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from /Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:8:
+/Users/nickhardy/esp/esp-idf/components/esp_adc/deprecated/include/esp_adc_cal.h:17:2: warning: #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h" [-Wcpp]
+   17 | #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h"
+      |  ^~~~~~~
+In file included from /Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:25:
+/Users/nickhardy/esp/esp-idf/components/driver/deprecated/driver/periph_ctrl.h:7:2: warning: #warning driver/periph_ctrl.h header is no longer used, and will be removed in future versions. [-Wcpp]
+    7 | #warning driver/periph_ctrl.h header is no longer used, and will be removed in future versions.
+      |  ^~~~~~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c: In function 'start_timer':
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:380:20: error: expected statement before ')' token
+  380 |   if (seconds != 5))
+      |                    ^
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:382:23: error: 'queue' undeclared (first use in this function); did you mean 'sigqueue'?
+  382 |     if (xQueueReceive(queue, &ele, pdMS_TO_TICKS(2000)))
+      |                       ^~~~~
+      |                       sigqueue
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:382:23: note: each undeclared identifier is reported only once for each function it appears in
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:382:31: error: 'ele' undeclared (first use in this function)
+  382 |     if (xQueueReceive(queue, &ele, pdMS_TO_TICKS(2000)))
+      |                               ^~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:392:3: error: 'else' without a previous 'if'
+  392 |   else
+      |   ^~~~
+In file included from /Users/nickhardy/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:11,
+                 from /Users/nickhardy/esp/esp-idf/components/esp_hw_support/include/esp_cpu.h:20,
+                 from /Users/nickhardy/esp/esp-idf/components/esp_hw_support/include/spinlock.h:11,
+                 from /Users/nickhardy/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:74,
+                 from /Users/nickhardy/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/portable.h:59,
+                 from /Users/nickhardy/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:71,
+                 from /Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:3:
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:394:34: error: 'gptimer' undeclared (first use in this function); did you mean 'gptimer_t'?
+  394 |     ESP_ERROR_CHECK(gptimer_stop(gptimer));
+      |                                  ^~~~~~~
+/Users/nickhardy/esp/esp-idf/components/esp_common/include/esp_err.h:117:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  117 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c: In function 'app_main':
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:750:11: warning: unused variable 'final_azimuth_and_altitude' [-Wunused-variable]
+  750 |       int final_azimuth_and_altitude = 1;
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:791:14: warning: unused variable 'voltage' [-Wunused-variable]
+  791 |     uint32_t voltage = esp_adc_cal_raw_to_voltage(adc_reading, adc_chars);
+      |              ^~~~~~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:594:7: warning: unused variable 'previous_voltage' [-Wunused-variable]
+  594 |   int previous_voltage = 0;
+      |       ^~~~~~~~~~~~~~~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:589:7: warning: variable 'current_position_vertical' set but not used [-Wunused-but-set-variable]
+  589 |   int current_position_vertical = 0;
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:587:7: warning: variable 'current_position_horizontal' set but not used [-Wunused-but-set-variable]
+  587 |   int current_position_horizontal = 0;
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:564:7: warning: unused variable 'step_1' [-Wunused-variable]
+  564 |   int step_1 = 2;
+      |       ^~~~~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:562:7: warning: unused variable 'step' [-Wunused-variable]
+  562 |   int step = 2;
+      |       ^~~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:441:27: warning: unused variable 'ele' [-Wunused-variable]
+  441 |   example_queue_element_t ele;
+      |                           ^~~
+At top level:
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:400:13: warning: 'test_alpha_display' defined but not used [-Wunused-function]
+  400 | static void test_alpha_display()
+      |             ^~~~~~~~~~~~~~~~~~
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/solarcode2.c.obj] Error 1
+make[1]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [all] Error 2

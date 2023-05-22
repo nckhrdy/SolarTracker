@@ -1,0 +1,61 @@
+Compiler supported targets: xtensa-esp32-elf
+
+In file included from /Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:6:
+/Users/nickhardy/esp/esp-idf/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from /Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:8:
+/Users/nickhardy/esp/esp-idf/components/esp_adc/deprecated/include/esp_adc_cal.h:17:2: warning: #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h" [-Wcpp]
+   17 | #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h"
+      |  ^~~~~~~
+In file included from /Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:25:
+/Users/nickhardy/esp/esp-idf/components/driver/deprecated/driver/periph_ctrl.h:7:2: warning: #warning driver/periph_ctrl.h header is no longer used, and will be removed in future versions. [-Wcpp]
+    7 | #warning driver/periph_ctrl.h header is no longer used, and will be removed in future versions.
+      |  ^~~~~~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:84:20: error: redefinition of 'TAG'
+   84 | static const char *TAG = "example";
+      |                    ^~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:29:20: note: previous definition of 'TAG' with type 'const char *'
+   29 | static const char *TAG = "example";
+      |                    ^~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c: In function 'app_main':
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:459:26: error: conflicting types for 'timer_config'; have 'mcpwm_timer_config_t'
+  459 |     mcpwm_timer_config_t timer_config = {
+      |                          ^~~~~~~~~~~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:429:22: note: previous definition of 'timer_config' with type 'gptimer_config_t'
+  429 |     gptimer_config_t timer_config = {
+      |                      ^~~~~~~~~~~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:729:17: warning: unused variable 'final_azimuth_and_altitude' [-Wunused-variable]
+  729 |             int final_azimuth_and_altitude = 1;
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:769:18: warning: unused variable 'voltage' [-Wunused-variable]
+  769 |         uint32_t voltage = esp_adc_cal_raw_to_voltage(adc_reading, adc_chars);
+      |                  ^~~~~~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:574:9: warning: unused variable 'previous_voltage' [-Wunused-variable]
+  574 |     int previous_voltage = 0;
+      |         ^~~~~~~~~~~~~~~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:569:9: warning: variable 'current_position_vertical' set but not used [-Wunused-but-set-variable]
+  569 |     int current_position_vertical = 0;
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:567:9: warning: variable 'current_position_horizontal' set but not used [-Wunused-but-set-variable]
+  567 |     int current_position_horizontal = 0;
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:544:9: warning: unused variable 'step_1' [-Wunused-variable]
+  544 |     int step_1 = 2;
+      |         ^~~~~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:542:9: warning: unused variable 'step' [-Wunused-variable]
+  542 |     int step = 2;
+      |         ^~~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:420:29: warning: unused variable 'ele' [-Wunused-variable]
+  420 |     example_queue_element_t ele;
+      |                             ^~~
+At top level:
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:379:13: warning: 'test_alpha_display' defined but not used [-Wunused-function]
+  379 | static void test_alpha_display()
+      |             ^~~~~~~~~~~~~~~~~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:29:20: warning: 'TAG' defined but not used [-Wunused-variable]
+   29 | static const char *TAG = "example";
+      |                    ^~~
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/solarcode2.c.obj] Error 1
+make[1]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [all] Error 2

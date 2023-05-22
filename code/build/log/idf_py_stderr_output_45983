@@ -1,0 +1,34 @@
+In file included from /Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:6:
+/Users/nickhardy/esp/esp-idf/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from /Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:8:
+/Users/nickhardy/esp/esp-idf/components/esp_adc/deprecated/include/esp_adc_cal.h:17:2: warning: #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h" [-Wcpp]
+   17 | #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h"
+      |  ^~~~~~~
+In file included from /Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:25:
+/Users/nickhardy/esp/esp-idf/components/driver/deprecated/driver/periph_ctrl.h:7:2: warning: #warning driver/periph_ctrl.h header is no longer used, and will be removed in future versions. [-Wcpp]
+    7 | #warning driver/periph_ctrl.h header is no longer used, and will be removed in future versions.
+      |  ^~~~~~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c: In function 'app_main':
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:729:11: warning: unused variable 'final_azimuth_and_altitude' [-Wunused-variable]
+  729 |       int final_azimuth_and_altitude = 1;
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:795:14: warning: unused variable 'voltage' [-Wunused-variable]
+  795 |     uint32_t voltage = esp_adc_cal_raw_to_voltage(adc_reading, adc_chars);
+      |              ^~~~~~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:574:7: warning: unused variable 'previous_voltage' [-Wunused-variable]
+  574 |   int previous_voltage = 0;
+      |       ^~~~~~~~~~~~~~~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:569:7: warning: variable 'current_position_vertical' set but not used [-Wunused-but-set-variable]
+  569 |   int current_position_vertical = 0;
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:567:7: warning: variable 'current_position_horizontal' set but not used [-Wunused-but-set-variable]
+  567 |   int current_position_horizontal = 0;
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:544:7: warning: unused variable 'step_1' [-Wunused-variable]
+  544 |   int step_1 = 2;
+      |       ^~~~~~
+/Users/nickhardy/Documents/GitHub/Team1-Boujaoude-Deokar-Hijazi-Hardy/quest-1/code/main/solarcode2.c:542:7: warning: unused variable 'step' [-Wunused-variable]
+  542 |   int step = 2;
+      |       ^~~~
